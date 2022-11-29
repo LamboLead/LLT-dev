@@ -1,0 +1,17 @@
+THINGS TO ADD
+
+* Table
+
+- Footer to display operations (usually totals) from the table
+  > Create a new config property (like 'headers'), an array of footer objects, which has all the information about different footers and operations to perform to certain rows
+
+- Calculated fields to display operations from the columns of the table
+  > Include the field inside 'headers' property, grab information from other different fields and display an operation with it
+
+- Display a row with a certain style depending on a field
+  > Set up a new config property (like 'actionFields'), an array of conditional formatting objects, which has the validator, the field to grab and the class to add to the row.
+  Create a function to get the value of a field.
+
+* Searchbar
+- Create a timepicker
+  > Allow the user to scroll to set the time

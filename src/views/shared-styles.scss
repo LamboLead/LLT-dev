@@ -1,0 +1,76 @@
+// Status classes for form
+.is-form-submitting {
+  animation: border-blink 1s infinite ease-in-out alternate;
+  border: none !important;
+  $colorMessage: hsl(216, 100%, 73%);
+  @keyframes border-blink {
+    0% {box-shadow: 0px 0px 0px $colorMessage;}
+    100% {box-shadow: 0px 0px 15px $colorMessage;}
+  }
+  .status {
+    .message {
+      color: $colorMessage;
+    }
+  }
+}
+.form-has-submitted {
+  $colorMessage: hsl(120, 60%, 50%);
+  box-shadow: 0px 0px 15px $colorMessage !important;
+  border: none !important;
+  .status {
+    .message {
+      color: $colorMessage;
+    }
+  }
+}
+.error-submitting-form {
+  $colorMessage: hsl(0, 100%, 64%);
+  box-shadow: 0px 0px 15px $colorMessage !important;
+  border: none !important;
+  .status {
+    .message {
+      color: $colorMessage;
+    }
+  }
+}
+.submission-denied {
+  box-shadow: 0px 0px 15px orange !important;
+  border: none !important;
+  .status {
+    .message {
+      color: orange
+    }
+  }
+}
+
+// Table class
+.stem-table {
+  position: relative;
+  background: white;
+  border-radius: 5px;
+  overflow-y: hidden;
+  border: 1px solid $lightBorderColor;
+  .header {
+    z-index: 2;
+    background-color: $mainColor;
+    color: $lightFontColor;
+    fill: $lightFontColor;
+  }
+  .rows {
+    border-bottom: 1px solid $lightBorderColor;
+  }
+}
+
+// Input classes
+// input {
+//   position: relative;
+//   height: fit-content;
+//   padding: 0.1rem 1ch;
+//   border: none;
+//   border-radius: 5px;
+//   background: $inputBackgroundDarkColor;
+//   color: $inputFontColor;
+//   &::placeholder {
+//     color: $inputPlaceholderColor;
+//   }
+// }

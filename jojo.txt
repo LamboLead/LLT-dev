@@ -1,0 +1,44 @@
+* LamboLead Tech
+
+> Visual elements
+
+  > Create a new section 'Visual elements' to show information in a certain way (cards (horizontal, vertical), boxes, top-to-bottom text, etc). Take into account animations on mount/unmount
+
+> Form
+
+  > Set up different types of fields
+  > Set up datasource for certain fields
+  # dataSource: ['Value 1', 'Value 2', ...]
+  # dataSource: () => {
+  #  Fetch.post('http://localhost:3007/careers', ...)
+  # }
+  # import someJson from '/src/someJSON.json';
+  # dataSource: someJson.careers
+  > Improve styles for SelectWithSearch element
+  > Think about the code to show different sections with different fields.
+    Example:
+    'MainSection' has the introduction to the form
+    'PersonalData' has fields regarding the personal data of the person
+      If the person checks the 'Do you study?' field as 'YES', the section 'Career' appears in the form
+      # linksTo: 'Career'
+      # on: 'Checked'
+    'Career' has fields regarding the career of the person
+      # name: 'Career'
+      # appearAs: 'Inline'
+
+* Events
+
+> Set up views and information
+
+* Data
+
+- Write a better code (organize, normalize functions) to organize the information fetched from the database.
+
+* Interactivity
+
+> Figure out a better way to implement click outside events
+
+* Administration
+
+> Set up log in (add a password for each member)
+> Start with the admin views to manage all the information of the page

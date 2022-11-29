@@ -1,0 +1,82 @@
+THINGS TO IMPROVE
+
+* Data standardization
+
+
+* Table
+
+- Improve data filtering by filtering by different fields
+  > You can set different datatypes for each field. These datatypes will be recognized by the config inside SearchBar, and to sort the information.
+  You can set the search params in the SearchBar, and call the different methods INSIDE THE TABLE to filter the information.
+  These methods will be defined in a separate .js file called 'data-filtering', or something like that.
+  Start working on this by setting up the basic and advanced SearchBar config and front-end (Basic and advanced config will be on the same file). Then, work on the exporting of searchParams.
+  Then, implement the data filtering inside the table depending on these searchParams.
+
+
+- Add pagination
+  > Idea 1: You can use the SQL 'LIMIT' attribute to limit the output based on the config file
+
+- Set and update search params in a better way
+  Problem: It is too cumbersome to set table params by using the repository search bar
+  > Try passing the application store as prop.
+  > It is a good idea to pass the search params as props. Consider keep using it
+
+- 'renderAs' doesn't work when the rows are sorted
+  > Idea 1: Try calling the method every time the rows are sorted
+  > Idea 2: Call the method when the data is filtered (in the second array), after the data is loaded from the server (first array)
+
+* SearchBar
+- Improve the searching of data
+  > Customize the search of data depending on the datatype specified in the table config
+
+- Search without having to make a query in the database
+  > Make a great query (or a query with LIMIT by pagination) and store those values in an array. Then, search by those results and set them in a different array.
+
+- Import all the methods corresponding to a certain datatype
+  > Create a class for each datatype and call it inside the config for the table, inside each header:
+    headers: [
+      {
+        ...
+        searchAs: {
+          type: new DateSearch(...),
+          hideMethods: ['Greater than', 'Less than'],
+        }
+      }
+    ]
+  In which you specify all the methods and information that you need.
+  You can also omit different methods depending on your needs
+  > Set a datatype for each field, like so:
+    headers: [
+      {
+        ...
+        type: 'Date' || new TableDate(...),
+        sortable: true
+      }
+    ]
+  This is easier to integrate with the 'sortable' option, as it recognizes how to sort the rows depending on the datatype, while also integrate well with searchbar. You can also render it as a date by default.
+
+* Interactivity
+
+- Create a better way to close elements when the user clicks outside of them
+  > Code a less complicated way of closing opened elements when the user click ouside of them. Integrate that logic outside of the element to avoid complex development
+  > Allow dropdown elements with the same attribute to be closed independantly frmo each other (just like the search methods on the advanced searchbar)
+  > Avoid having to write code inside the goddamn component itself. Make it automatic (just write some parameter, add some function, etc and that's it)
+  > Idea: You can keep this method (improving having to write code inside the component) by adding a new item to the list of items inside the event bus when the component is being created (with a different ID for each element). This way you won't have to update the list every time that the developer wants to add a click-outside event to a new element (or even similar elements, like the search method dropdown)
+  > Also, move the object that links the datatypes and the search methods outside of the SearchBar component.
+
+  > Idea:
+    When the event bus starts, scan all the elements that have the attribute 'data-click-outside'. Create a list of elements to close in the state.
+    Set the other options ('trigger', 'shadow', 'openOnStart') to perform other actions
+      '-trigger' is to indicate the trigger of the object
+      '-shadow' is to indicate to appear a shadow
+      'openOnStart' is to open the object on rendering
+    The list should have objects of this type:
+      {
+        name: 'element_name',
+        isOpened: false,
+        appearShadow: true
+      }
+    Create two separate default classes to show the 'opened' and 'closed' states. Add the classes to the elements according to their state.
+    If the dev wants to have full customizability of the classes, create two more attributes:
+      '-classOnOpen', '-classOnClosed'
+    Make the shadow a class to put to the object (maybe with a box-shadow)

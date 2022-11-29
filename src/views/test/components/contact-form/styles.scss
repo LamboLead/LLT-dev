@@ -1,0 +1,49 @@
+#testing-contact-form {
+  width: 90%;
+  height: 65vh;
+  margin-block: 2rem;
+  .title {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .description {
+    font-size: 1.1rem;
+  }
+  .form-container {
+    border-radius: 10px;
+  }
+  .form {
+    width: 90%;
+    height: fit-content;
+    button {
+      width: 30%;
+      align-self: flex-end;
+    }
+  }
+
+  .corr {
+    border: 5px solid yellow;
+    
+  }
+  .incorr {
+    border: 5px solid orange;
+    .error-msg {
+      color: orange;
+      font-size: 3rem;
+    }
+  }
+
+  .sCorr {
+    .control {
+      border: 5px solid pink;
+    }
+  }
+  .sIncorr {
+    .control {
+      border: 5px solid violet;
+    }
+    .error-msg {
+      font-size: 2rem;
+    }
+  }
+}

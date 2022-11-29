@@ -1,0 +1,42 @@
+PLAN - PROYECTO STEM
+
+0. Requerimientos
+
+> Recoger todos los requerimientos del proyecto
+> Definir tecnologías a utilizar (lenguajes, bases de datos, frameworks, etc)
+> Definir plan de hosting y uso de servidor
+
+1. Diseño
+
+> Crear diseño preliminar en bocetos a lápiz
+> Crear wireframes de cada una de las páginas (cliente y administrador)
+> Seleccionar los colores de la aplicación
+
+2. Arquitectura de software
+
+> Definir una arquitectura de software
+> Definir una arquitectura para la base de datos
+
+2. Código y testing
+
+- Front End
+> Creación de interfaz responsiva para cada página
+(testing)
+> Creación de interfaz responsiva para página del administrador
+(testing)
+> Creación de animaciones
+
+- Back End
+> Creación de base de datos para repositorio
+> Creación de infraestructura para formulario de contacto
+> Creación de base de datos para información general (miembros activos y perfiles, noticias y eventos, blog)
+> Creación de APIs para realizar CRUD en cada uno de los servicios anteriores.
+> Asegurarse de que la página y el tráfico de información sean seguros.
+
+
+
+
+
+
+
+3. Testing

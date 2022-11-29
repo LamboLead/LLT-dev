@@ -1,0 +1,67 @@
+Ideas
+- Use the Facade Pattern to fetch information from the database
+  Create a custom Fetch function that takes as arguments different parameters (method, url, urlParameters)
+  Call that function instead of setting the logic inside each component.
+
+- Use the Command Pattern to implement DAO
+  Create different commands for Create, Get, Update and Delete. Each command must have an execute() and undo() methods.
+  The DAO must include these commands inside of it, and execute them with the specified arguments.
+  This object must account for logging in the events of Create, Update and Delete.
+
+- Single Responsability Principle: Each module, object, function, etc must only have one reason to be changed (only one concern). This makes the code easier to read, maintain and improve. Don't cram all sorts of funcionalities inside a single class.
+  Use if you're going to create different classes for the repository funcionality.
+
+- Open/Closed Principle: Classes, modules, functions, etc should be open for extension, but closed for modification. This means that each entity in question should account for each new type of information without having to be modified.
+  You need to break out the code into smaller components, so that the code that handles the code, knows what to do.
+  Implement this in the searchbar: Create a class for each type of field (input type text, list select, radiobutton, checkbox)and make the master object (searchbar) render the appropiate information.
+
+- Liskov Substitution Principle: If B is a subclass of A, then if you replace B with A, the functionality should work the same way.
+
+- Interface Segregation Principle: A class must use all the functionalities that it has built in.
+  If you have a big class that has various underutilized functionalities, you should break them down into smaller classes that actually use all of them.
+
+- Dependency Inversion Principle: A high-level entity shouldn't depend on an external or low-level entity. You create an intermediate instance between two entities: One high-level related to the logic, and other low-level related to an external source (API) or a code that you want to reuse later with other settings.
+  Implement this in the table for the repository: Create a processing class that standardizes the information structure for the table and its associated search bar.
+
+Code flow
+
+- User enters the page
+  - Table components is mounted()
+    - Method fetchData(params to show everything). Show loading animation
+        Navigate to the URL
+        (inside the route)
+          Use DAO to build SQL query
+          Send SQL query
+          Retrieve information
+          Confirm that information has arrived
+        (when receiving info inside fetchData)
+    - Remove loading animation
+    - Display information
+
+  - Display data
+
+- User looks by project title
+  - Grab the field that the user is looking for and its value
+  - Method fetchData(params)
+  - Repeat above
+
+- User sorts projects by title
+  - Take all table props (the rows being displayed in the page)
+  - Sort results by the specified type
+  - Display information in the table
+
+- User looks by title and keyword
+  - As the user types, a propietary method from the searchbar will be called to fetch and display possible results as a list.
+    If the values of the field are fixed, display them as a selection list.
+  - The user selects a result from the list or as an input
+  - Grab the fields that the user is looking for and their value
+  - Method fetchData(params)
+  - Repeat above
+
+WHAT TO DO NEXT?
+
+> Create a Table object that will hold all the configuration for the table and all of its methods.
+
+> Incorporate all configuration and methods inside this class. Make sure that it works.
+
+> Incorporate the "actions field" into the table. 

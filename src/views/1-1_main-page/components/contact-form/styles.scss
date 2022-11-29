@@ -1,0 +1,23 @@
+#mainpage-contact-form {
+  width: 90%;
+  height: 65vh;
+  margin-block: 2rem;
+  .title {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .description {
+    font-size: 1.1rem;
+  }
+  .form-container {
+    border-radius: 10px;
+  }
+  .form {
+    width: 90%;
+    height: fit-content;
+    button {
+      width: 30%;
+      align-self: flex-end;
+    }
+  }
+}

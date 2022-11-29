@@ -1,0 +1,16 @@
+@mixin screen-width($min, $max, $orientation) {
+  @media (min-width: $min) and (max-width: $max) and (orientation: $orientation) {
+    @content
+  }
+}
+
+
+$phone: (min: 0px, max: 720px, orientation: portrait);
+// $phone: (min: 0px, max: 450px, orientation: portrait)
+// $phoneHorizontal: (min: 0px, max: 700px, orientation: landscape)
+
+// $tablet: (min: 451px, max: 1025px, orientation: portrait)
+// $tabletHorizontal: (min: 700px, max: 1025px, orientation: landscape)
+$laptop: (min: 721px, max: 1520px, orientation: landscape);
+$desktop: (min: 1521px, max: 4000px, orientation: landscape);
+  

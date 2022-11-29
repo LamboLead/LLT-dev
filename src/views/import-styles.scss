@@ -1,0 +1,32 @@
+// This file will import all the styles for the reusable components. If you set a new component, you need to import its styles in this file, otherwise the compiler will not take them.
+
+@import './1-1_main-page/styles.scss';
+
+@import './test/styles.scss';
+// // Repository
+// @import './repository/components/projects-table/styles.scss'; // Projects table
+
+// // Member
+// @import './member/components/projects-table/styles.scss'; // Projects table
+
+// // Events
+// @import './events/components/events-vertical-cards/styles.scss'; // Events vertical cards
+
+// // Project request
+// @import './project-request/components/project-form/styles.scss'; // Request form
+// @import './project-request/components/project-table/styles.scss'; // Project table
+
+// // Vinculation
+// @import './vinculation/components/vinculation-form/styles.scss'; // Vinculation form
+
+// // Log in
+// @import './login/components/login-form/styles.scss'; // Log in form
+
+// // Admin -> Solicitudes
+// @import './admin-solicitudes/components/solicitudes-table/styles.scss';
+
+// Shared styles
+@import './shared-styles.scss';
+
+// External elements styles
+@import './external-elements-styles.scss';

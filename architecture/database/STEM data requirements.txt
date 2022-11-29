@@ -1,0 +1,37 @@
+STEM DATA REQUIREMENTS
+
+The group has different members. Each member has:
+- Id (unique)
+- Name
+- File route for profile image
+- Biography
+- Indicator to tell that the member is active
+- Year of inclusion
+- Role (various)
+
+Stored in the database must be different projects. Each project has:
+- Id (unique)
+- Title
+- Year of publication
+- Abtract
+- File route for infography
+- Keywords (various)
+
+The group must organize events. Each event has:
+- Id
+- Name
+- Abstract
+- Information
+- External link for more information
+
+The group works with different organizations. Each one of them has:
+- Id
+- Name
+- Description
+- Link for their website
+- File route for their logo
+
+A member can be the author of many projects, and a project can be authored by different members
+
+An event can be organized by different organizers, and an organizer can set up various events.
+

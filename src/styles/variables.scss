@@ -1,0 +1,34 @@
+// Sizes
+$navbarHeight: 12vh;
+
+
+// Font
+$font: Lato, 'sans-serif';
+
+// Colors
+$mainColor: green;
+$secondaryColor: lightgreen;
+$lightFontColor: white;
+$darkFontColor: black;
+$lightBorderColor: darkgray;
+$darkBorderColor: gray;
+$backgroundColor: white;
+
+// Shades
+$lightestShade: rgba(255, 255, 255, 0.8);
+$lighterShade: rgba(255, 255, 255, 0.6);
+$lightShade: rgba(255, 255, 255, 0.3);
+$leastLightShade: rgba(255, 255, 255, 0.1);
+$leastDarkShade: rgba(0, 0, 0, 0.1);
+$darkShade: rgba(0, 0, 0, 0.3);
+$darkerShade: rgba(0, 0, 0, 0.6);
+$darkestShade: rgba(0, 0, 0, 0.8);
+
+
+// Form & form fields
+$inputBackgroundDarkColor: darkgray;
+$inputBackgroundLightColor: lightgray;
+$inputPlaceholderColor: lightgray;
+$inputFontColor: white;
+$incorrectFieldColor: red;
+$correctFieldColor: green;
