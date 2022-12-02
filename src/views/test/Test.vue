@@ -2,24 +2,27 @@
 import { useEventBus } from '/LLT/frontend/stores/event-bus.js';
 
 // Import component
-import TestSearchBar from '/LLT/testing-development/frontend/components/search-bar/SearchBar.vue';
-import ContactForm from '/LLT/frontend/components/form/Form.vue'
+// import TestSearchBar from '/LLT/development/frontend/components/search-bar/SearchBar.vue';
+import ContactForm from '/LLT/frontend/components/form/Form.vue';
+import VerticalCards from '/LLT/frontend/components/vertical-cards/VerticalCards.vue';
 
 // Import configuration
 import searchConfig from './components/search-bar/config.js';
 import formConfig from './components/contact-form/config.js';
-
+import cardsConfig from './components/vertical-cards/config.js';
 
 export default {
   setup() {
     return {
       searchConfig,
-      formConfig
+      formConfig,
+      cardsConfig
     }
   },
   components: {
-    TestSearchBar,
-    ContactForm
+    // TestSearchBar,
+    ContactForm,
+    VerticalCards
   },
   mounted() {
     let eventBus = useEventBus();
@@ -31,8 +34,9 @@ export default {
 
 <template>
 <section>
-  <TestSearchBar :config="this.searchConfig"/>
+  <!-- <TestSearchBar :config="this.searchConfig"/> -->
   <!-- <ContactForm :config="this.formConfig"/> -->
+  <VerticalCards :config="this.cardsConfig"/>
 </section>
 </template>
 
@@ -44,5 +48,6 @@ section {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  padding: 1rem;
 }
 </style>

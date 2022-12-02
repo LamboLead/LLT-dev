@@ -17,14 +17,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.json());
 
 // Routes
-app.use(require('./routes/main.js'))
-  .use(require('./routes/projects.js'))
-  .use(require('./routes/members.js'))
-  .use(require('./routes/contact-request.js'))
-  .use(require('./routes/project-request.js'))
-  .use(require('./routes/vinculation-request.js'))
-  .use(require('./routes/events.js'))
-  .use(require('./routes/admin-solicitudes.js'));
+app.use(require('./routes/table.js'));
 
 app.listen(app.get('port'), () => {
   console.log(`Server on port ${app.get('port')}`);

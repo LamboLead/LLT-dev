@@ -14,6 +14,7 @@ export default {
       <!-- <img src="../assets/logo.svg" alt=""> -->
     </RouterLink>
     <div class="nav-container">
+      <RouterLink to="/table">Table</RouterLink>
       <!-- <RouterLink to="/el-semillero">El semillero</RouterLink>
       <RouterLink to="/nuestro-trabajo">Nuestro trabajo</RouterLink>
       <RouterLink to="/repositorio">Repositorio</RouterLink>

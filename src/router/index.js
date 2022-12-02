@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import MainPage from '/src/views/1-1_main-page/MainPage.vue';
+import TableView from '/src/views/1-2_table/Table.vue';
 // import Semillero from '/src/components/views/1-3_semillero/Semillero.vue';
 // import Repository from '/src/components/views/1-4_repository/Repository.vue';
 // import Events from '/src/components/views/1-5_events/Events.vue';
@@ -19,6 +20,11 @@ const router = createRouter({
       path: '/',
       name: 'inicio',
       component: MainPage
+    },
+    {
+      path: '/table',
+      name: 'table',
+      component: TableView
     },
     // {
     //   path: '/repositorio',

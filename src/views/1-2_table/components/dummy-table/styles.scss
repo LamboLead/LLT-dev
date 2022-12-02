@@ -1,0 +1,39 @@
+#dummy-table {
+  position: relative;
+  width: 80%;
+  height: 55%;
+  border-radius: 5px;
+  overflow-y: hidden;
+  border: 1px solid $darkBorderColor;
+  // Styles for the header
+  .header {
+    height: 3rem;
+    z-index: 2;
+    background-color: $mainColor;
+    color: $lightFontColor;
+    fill: $lightFontColor;
+  }
+  // Styles for each row
+  .rows {
+    height: 2.7rem;
+    border-bottom: 1px solid $lightBorderColor;
+  }
+  // Container of all the fields
+  .field-container {
+    width: 85%;
+  }
+  // Field that contains actions
+  .action-fields {
+    width: 15%;
+  }
+  // Length of the fields inside the table
+  .long {
+    width: 50%;
+  }
+  .medium {
+    width: 20%;
+  }
+  .short {
+    width: 10%;
+  }
+}

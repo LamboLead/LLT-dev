@@ -22,8 +22,8 @@ registerFields(app);
 
 // Importing search-bar fields
 // import registerSearchFields from '/LLT/frontend/components/search-bar/datatypes/index.js';
-import registerSearchFields from '/LLT/testing-development/frontend/components/search-bar/datatypes/index.js';
-registerSearchFields(app);
+// import registerSearchFields from '/LLT/frontend/components/search-bar/datatypes/index.js';
+// registerSearchFields(app);
 
 // Importing cards elements
 import registerVerticalCardElements from '/LLT/frontend/components/vertical-cards/elements/index.js';
