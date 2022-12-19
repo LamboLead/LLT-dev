@@ -13,7 +13,7 @@ import registerIcons from '/LLT/frontend/components/icons/index.js';
 registerIcons(app);
 
 // Import slides
-import registerSlides from '/src/views/1-1_main-page/components/slider/slides/index.js';
+import registerSlides from '/src/views/slider/components/slider/slides/index.js';
 registerSlides(app);
 
 // Importing form fields
