@@ -14,6 +14,10 @@ export default {
       validation: {
         regex: /^([\w\d\,\.\?\&\!\$\(\)#%¡¿:áéíóúüñ]{1,}\s){1,}\.*[\w\d\s\,\.\?\!áéíóúüñ]{1,}$/,
         errorMsg: 'Tu nombre debe tener al menos dos palabras',
+        classes: {
+          correct: 'corrField',
+          incorrect: 'incorrField'
+        }
       }
     },
     {
@@ -50,6 +54,12 @@ export default {
       }
     }
   ],
+  classes: {
+    fields: {
+      correct: 'corr',
+      incorrect: 'incorr'
+    }
+  },
   status: {
     loading: {
       class: 'is-form-submitting',

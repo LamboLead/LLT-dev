@@ -7,7 +7,7 @@ const PORT = process.env.PORT;
 const HOST = process.env.HOST;
 
 // Settings
-app.set('port', PORT || 3008);
+app.set('port', PORT || 3006);
 app.use(cors());
 
 // Load static multimedia

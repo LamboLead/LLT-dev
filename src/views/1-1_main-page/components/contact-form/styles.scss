@@ -20,4 +20,16 @@
       align-self: flex-end;
     }
   }
+  .corrField {
+    border: 3px solid blue;
+  }
+  .incorrField {
+    border: 3px solid magenta;
+  }
+  .corr {
+    border: 2px solid green;
+  }
+  .incorr {
+    border: 2px solid red;
+  }
 }
