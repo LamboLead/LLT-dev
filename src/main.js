@@ -12,10 +12,6 @@ pinia.use(({store}) => {store.router = markRaw(router)});
 import registerIcons from '/LLT/frontend/components/icons/index.js';
 registerIcons(app);
 
-// Import slides
-import registerSlides from '/src/views/1-1_main-page/components/slider/slides/index.js';
-registerSlides(app);
-
 // Importing form fields
 import registerFields from '/LLT/frontend/components/form/fields/index.js';
 registerFields(app);
