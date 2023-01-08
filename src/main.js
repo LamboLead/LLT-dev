@@ -16,6 +16,10 @@ registerIcons(app);
 import registerElements from '/LLT/frontend/components/simple-elements/index.js';
 registerElements(app);
 
+// Importing components
+import registerComponents from './views/register-components.js';
+registerComponents(app);
+
 // Importing search-bar fields (do if from the elements/index.js file)
 // import registerSearchFields from '/LLT/frontend/components/search-bar/datatypes/index.js';
 // import registerSearchFields from '/LLT/frontend/components/search-bar/datatypes/index.js';

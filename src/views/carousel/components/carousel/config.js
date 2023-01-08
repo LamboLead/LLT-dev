@@ -1,24 +1,12 @@
 export default {
 	id: 'dummy-carousel',
-	autoSlide: true,
-	arrowType: 'hpta',
-	animation: {
-		infinite: true, // Allows the carousel to be slided indefinitely
-		animationType: 'power.out', // Defines the animation type between each transition
-		timeToCompletion: 6 // Total time to pass the carousel
-	},
-	elements: [
-		{
-			id: 1,
-			displayTime: 4
-		},
-		{
-			id: 2,
-			displayTime: 5
-		},
-		{
-			id: 3,
-			displayTime: 6
-		}
-	]
+	// autoSlide: true,
+	// arrowType: 'hpta',
+	template: 'DummyCarouselElement',
+	transition: {
+		// ease: 'none', // Defines the easing between each transition
+		// infinite: true, // Allows the carousel to be slided indefinitely
+		// transitionTime: 1, // Time that the transition takes to complete
+		displayTime: 9 // Time that the element is displayed at the center
+	}
 }

@@ -1,0 +1,27 @@
+[
+	{
+		"imageSrc": "fulano-de-tal.png",
+		"employeeName": "1. Omar Evelio Ruiz",
+		"employeePosition": "Profesor competente"
+	},
+	{
+		"imageSrc": "mauricio-mejia.jpeg",
+		"employeeName": "2. Mauricio Mejía",
+		"employeePosition": "Profesor incompetente"
+	},
+	{
+		"imageSrc": "juan-david-lopez.png",
+		"employeeName": "3. Miguel Duque",
+		"employeePosition": "Enano incompetente"
+	},
+	{
+		"imageSrc": "juan-david-lopez.png",
+		"employeeName": "4. Fabián Sierra",
+		"employeePosition": "Estudiante incompetente"
+	},
+	{
+		"imageSrc": "juan-david-lopez.png",
+		"employeeName": "4. Alejandro Naranjo",
+		"employeePosition": "Albino incompetente"
+	}
+]
