@@ -14,7 +14,7 @@ export default {
       <!-- <img src="../assets/logo.svg" alt=""> -->
     </RouterLink>
     <div class="nav-container">
-      
+      <RouterLink to="/carousel">Carousel</RouterLink>
     </div>
   </nav>
   <div class="spacer"></div>
