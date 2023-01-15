@@ -17,17 +17,8 @@ import registerSlides from '/src/views/slider/components/slider/slides/index.js'
 registerSlides(app);
 
 // Importing form fields
-import registerFields from '/LLT/frontend/components/form/fields/index.js';
-registerFields(app);
-
-// Importing search-bar fields
-// import registerSearchFields from '/LLT/frontend/components/search-bar/datatypes/index.js';
-// import registerSearchFields from '/LLT/frontend/components/search-bar/datatypes/index.js';
-// registerSearchFields(app);
-
-// Importing cards elements
-import registerVerticalCardElements from '/LLT/frontend/components/vertical-cards/elements/index.js';
-registerVerticalCardElements(app);
+import registerElements from '/LLT/frontend/components/simple-elements/index.js';
+registerElements(app);
 
 // Middleware and application mounting
 app.use(pinia);
