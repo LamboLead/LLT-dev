@@ -33,5 +33,6 @@ section {
 	width: 100vw;
 	height: 88vh;
 	@include flex-container(column, center, center);
+	overflow: scroll;
 }
 </style>
