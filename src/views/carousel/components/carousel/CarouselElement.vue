@@ -8,10 +8,9 @@ export default {
 
 <template>
 	<div class="element-container">
-		<img :src="`/public/images/${this.info.imageSrc}`" alt="Just an image">
+		<img :src="`/images/${this.info.imageSrc}`" alt="Just an image">
 		<span class="title">{{ this.info.employeeName }}</span>
 		<span class="text">Posición:</span>
-		<span class="text">{{ this.info.employeePosition }}</span>
 		<span class="text">{{ this.info.employeePosition }}</span>
 	</div>
 </template>
@@ -21,17 +20,19 @@ export default {
 	min-width: 17rem;
 	width: 18rem;
 	height: 100%;
-	border: 1px solid red;
 	@include flex-container(column, flex-start, center);
-	// margin-inline: 1rem;
-	// position: absolute;
+	border: 1px dashed lightgray;
+	background: white;
 }
 
 img {
 	width: 70%;
 	aspect-ratio: 1/1;
-	// border-radius: 0%;
+	border-radius: 50%;
 	margin: 3rem;
+	:hover {
+		transform: scale(1.05);
+	}
 }
 
 .title {

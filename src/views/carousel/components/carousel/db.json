@@ -21,7 +21,12 @@
 	},
 	{
 		"imageSrc": "juan-david-lopez.png",
-		"employeeName": "4. Alejandro Naranjo",
-		"employeePosition": "Albino incompetente"
+		"employeeName": "5. Alejandro Naranjo",
+		"employeePosition": "Bruto incompetente"
+	},
+	{
+		"imageSrc": "juan-david-lopez.png",
+		"employeeName": "6. Alejandro Estrada",
+		"employeePosition": "Brutísimo incompetente"
 	}
 ]
