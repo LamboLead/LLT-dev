@@ -1,9 +1,9 @@
 export default {
   id: 'mainpage-slider',
-  slidesFolder: '/src/components/views-components/main-page/slider', // not working
+  slidesFolder: '/src/views/slider/components/slider/slides',
   slides: [
     {
-      id: 1,
+      fileName: 'Slide1',
       displayTime: 6,
       transition: {
         ease: 'expo.out',
@@ -11,7 +11,7 @@ export default {
       }
     },
     {
-      id: 2,
+      fileName: 'Slide2',
       displayTime: 6,
       transition: {
         ease: 'expo.out',
@@ -19,7 +19,7 @@ export default {
       }
     },
     {
-      id: 3,
+      fileName: 'Slide3',
       displayTime: 6,
       transition: {
         ease: 'expo.out',

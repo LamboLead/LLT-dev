@@ -1,19 +1,8 @@
-<script>
-  export default {
-    props: {
-      slideNumber: Number
-    }
-  }
-  </script>
-  
 <template>
-  <div
-    class="slide"
-    :data-slide-number="this.slideNumber" 
-  >
+  <div class="slide">
     <!-- You can put your information below -->
     <div class="info-container">
-      <span class="title">Welcome to Lorem Ipsum!.</span>
+      <span class="title">Lorem Ipsum rocks!</span>
       <span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia vel molestiae necessitatibus porro deserunt obcaecati facilis dignissimos placeat eius eum, ratione tempore doloremque tempora eveniet commodi praesentium. Error qui quos nobis quia vitae facilis. Voluptatum a dolore eaque ut quia?</span>
       <button>Ver más</button>
     </div>
@@ -21,7 +10,6 @@
 </template>
 
 <style lang="scss" scoped>
-
 .slide {
   max-width: 100%; // Do not touch this shit
   min-width: 100%; // Do not touch this shit
@@ -31,7 +19,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  background: rgb(150, 150, 180);
+  background: rgb(150, 150, 210);
 }
 .info-container{
   width: 40%;

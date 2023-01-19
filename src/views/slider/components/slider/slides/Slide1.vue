@@ -1,16 +1,5 @@
-<script>
-export default {
-  props: {
-    slideNumber: Number
-  }
-}
-</script>
-
 <template>
-  <div
-    class="slide"
-    :data-slide-number="this.slideNumber" 
-  >
+  <div class="slide">
   <!-- You can put your information below -->
     <div class="info-container">
       <span class="title">Lorem ipsum is here.</span>
