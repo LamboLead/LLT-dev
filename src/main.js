@@ -12,18 +12,13 @@ pinia.use(({store}) => {store.router = markRaw(router)});
 import registerIcons from '/LLT/frontend/components/icons/index.js';
 registerIcons(app);
 
-// Importing elements
+// Importing form fields
 import registerElements from '/LLT/frontend/components/simple-elements/index.js';
 registerElements(app);
 
-// Importing components
-import registerComponents from './views/register-components.js';
+// Importing external components
+import registerComponents from './views/register-components';
 registerComponents(app);
-
-// Importing search-bar fields (do if from the elements/index.js file)
-// import registerSearchFields from '/LLT/frontend/components/search-bar/datatypes/index.js';
-// import registerSearchFields from '/LLT/frontend/components/search-bar/datatypes/index.js';
-// registerSearchFields(app);
 
 // Middleware and application mounting
 app.use(pinia);
