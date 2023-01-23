@@ -2,7 +2,7 @@
   <div class="slide">
     <!-- You can put your information below -->
     <div class="info-container">
-      <span class="title">Lorem Ipsum rocks!</span>
+      <span class="title">3. Lorem Ipsum rocks!</span>
       <span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia vel molestiae necessitatibus porro deserunt obcaecati facilis dignissimos placeat eius eum, ratione tempore doloremque tempora eveniet commodi praesentium. Error qui quos nobis quia vitae facilis. Voluptatum a dolore eaque ut quia?</span>
       <button>Ver más</button>
     </div>
