@@ -28,7 +28,7 @@ export default {
 section {
   position: relative;
   width: 100%;
-  height: fit-content;
+  height: $sectionHeight;
   display: flex;
   flex-direction: column;
   align-items: center;
