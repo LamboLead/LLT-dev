@@ -13,11 +13,6 @@ $phone: (min: 0px, max: 720px, orientation: portrait);
 // $tabletHorizontal: (min: 700px, max: 1025px, orientation: landscape)
 $laptop: (min: 721px, max: 1520px, orientation: landscape);
 $desktop: (min: 1521px, max: 4000px, orientation: landscape);
-<<<<<<< HEAD
-  
-=======
-
->>>>>>> dev-slider
 @mixin flex-container($direction, $justifyContent, $alignItems) {
   display: flex;
   flex-direction: $direction;
