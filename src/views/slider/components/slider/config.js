@@ -18,16 +18,16 @@ export default {
       fileName: 'Slide2',
       displayTime: 3,
       transition: {
-        ease: 'expo.out',
-        time: 0.7
+        ease: 'power3.out',
+        time: 1
       }
     },
     {
       fileName: 'Slide3',
       displayTime: 3,
       transition: {
-        ease: 'Elastic.easeOut',
-        time: 1.2
+        ease: 'power2.out',
+        time: 1
       }
     }
   ]
