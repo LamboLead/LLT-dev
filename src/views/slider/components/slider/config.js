@@ -1,6 +1,9 @@
 export default {
   id: 'mainpage-slider',
   slidesFolder: '/src/views/slider/components/slider/slides',
+  controls: {
+    arrowType: 'DoubleChevron'
+  },
   animation: {
     type: 'horizontal',
     defaultDirection: 'rightToLeft'
